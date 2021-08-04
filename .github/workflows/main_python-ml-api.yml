@@ -60,3 +60,6 @@ jobs:
           app-name: 'python-ml-api'
           slot-name: 'production'
           publish-profile: ${{ secrets.AzureAppService_PublishProfile_ff21decc35cf4b80b4d2112f315dc6dd }}
+          
+      - name: Azure Login
+      uses: Azure/login@v1
